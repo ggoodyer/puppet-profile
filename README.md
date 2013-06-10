@@ -1,2 +1,2 @@
-zsh-profile
-===========
+Profile/Environment settings
+============================
