@@ -1,8 +1,5 @@
 # zsh environment configurations
 
-# Add aliases
-alias ls="ls -GxF"
-
 # MAVEN
 export M2_HOME=~/Dropbox/apps/apache-maven-3.0.4/
 export MAVEN_HOME=~/Dropbox/apps/apache-maven-3.0.4/
