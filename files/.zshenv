@@ -26,4 +26,18 @@ ssh-add ~/.ssh/rs-dash.key > /dev/null 2>&1
 # Add boxen to zsh environment
 source /opt/boxen/env.sh
 
+# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+export HISTSIZE=1000
+export HISTFILESIZE=2000
+export HISTFILE="$HOME/.history"
+export SAVEHIST=$HISTSIZE
+
+#To prevent history from recording duplicated entries (such as ls -l entered many times during single shell session), you can set the hist_ignore_all_dups option:
+setopt hist_ignore_all_dups
+
+#A useful trick to prevent particular entries from being recorded into a history by preceding them with at least one space
+setopt hist_ignore_space
+
+# make less more friendly for non-text input files, see lesspipe(1)
+[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
