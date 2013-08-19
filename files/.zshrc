@@ -1,7 +1,7 @@
 # zsh interactive configurations
 
 # Add aliases
-alias ls="ls -GxF --color=auto"
+alias ls="ls -GxF"
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
